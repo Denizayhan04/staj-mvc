@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = staj_mvc
+build_property.RootNamespace = staj_mvc
+build_property.ProjectDir = /Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Ayarlar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXlhcmxhci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Dosya/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9zeWEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Dosya/LogGoster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG9zeWEvTG9nR29zdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Doviz/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRG92aXovSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Grafik/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3JhZmlrL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Kayit/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2F5aXQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Kayit/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2F5aXQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Kayit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvS2F5aXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Parse/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFyc2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Parse/_GecerliTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFyc2UvX0dlY2VybGlUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Parse/_HataliList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFyc2UvX0hhdGFsaUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/denizayhan04/RiderProjects/staj-mvc/staj-mvc/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tlv6x57779

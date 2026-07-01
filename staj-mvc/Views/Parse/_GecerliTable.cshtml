@@ -1,0 +1,65 @@
+@using staj_mvc.Dto
+@model List<SensorKayitDto>
+
+<h4 class="text-success">Geçerli Kayıtlar (@Model.Count)</h4>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">Geçerli kayıt bulunamadı.</p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>Cihaz ID</th>
+                    <th>Versiyon</th>
+                    <th>Paket #</th>
+                    <th>GPS Tarihi</th>
+                    <th>Pil</th>
+                    <th>Enlem</th>
+                    <th>Boylam</th>
+                    <th>Rakım</th>
+                    <th>Rzg Yönü</th>
+                    <th>Rzg Şid.</th>
+                    <th>Uydu</th>
+                    <th>Direnç1</th>
+                    <th>Direnç2</th>
+                    <th>pF</th>
+                    <th>GPS</th>
+                    <th>Glonass</th>
+                    <th>Galileo</th>
+                    <th>Çip °C</th>
+                    <th>Sinyal</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var k in Model)
+                {
+                    <tr>
+                        <td>@k.CihazId</td>
+                        <td>@k.Versiyon</td>
+                        <td>@k.PaketSayisi</td>
+                        <td>@k.GpsTarihi</td>
+                        <td>@k.PilGucu</td>
+                        <td>@k.Enlem</td>
+                        <td>@k.Boylam</td>
+                        <td>@k.Rakim</td>
+                        <td>@k.RuzgarYonu</td>
+                        <td>@k.RuzgarSiddeti</td>
+                        <td>@k.UyduSayisi</td>
+                        <td>@k.Direnc1</td>
+                        <td>@k.Direnc2</td>
+                        <td>@k.Pikofarad</td>
+                        <td>@k.Gps</td>
+                        <td>@k.Glonass</td>
+                        <td>@k.Galileo</td>
+                        <td>@k.CipSicaklik</td>
+                        <td>@k.AliciSinyalSeviyesi</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

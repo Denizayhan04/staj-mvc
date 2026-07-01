@@ -1,0 +1,36 @@
+@model List<staj_mvc.Models.DovizSatir>
+
+@{
+    ViewData["Title"] = L["DovizKurlari"];
+}
+
+<h2>@L["DovizBaslik"]</h2>
+
+@if (ViewBag.Hata != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Hata
+    </div>
+}
+else
+{
+    <p class="text-muted">@L["SonGuncelleme"]: @ViewBag.GuncellemeSaati</p>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>@L["ParaBirimi"]</th>
+            <th>@L["KurUSD"]</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var satir in Model)
+        {
+            <tr>
+                <td>@satir.ParaBirimi</td>
+                <td>@satir.Kur.ToString("F4")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = L["CanlıGrafik"];
+}
+
+<h2>@L["GrafikBaslik"]</h2>
+<p id="guncelleme" class="text-muted"></p>
+
+<div id="hata-mesaji" class="alert alert-danger d-none"></div>
+
+<div style="max-width: 800px;">
+    <canvas id="dovizGrafik"></canvas>
+</div>
+
+<button id="yenileBtn" class="btn btn-primary mt-3" onclick="veriYukle()">
+    @L["Yenile"]
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    let grafik = null;
+    const sonGuncellemeLabel = '@L["SonGuncelleme"]';
+    const yukleniyor = '@L["Yukleniyor"]';
+    const yenile = '@L["Yenile"]';
+
+    async function veriYukle() {
+        const btn = document.getElementById('yenileBtn');
+        const hataDiv = document.getElementById('hata-mesaji');
+
+        btn.disabled = true;
+        btn.textContent = yukleniyor;
+        hataDiv.classList.add('d-none');
+
+        try {
+            const response = await fetch('/Grafik/Veri');
+            const data = await response.json();
+
+            if (data.hata) {
+                hataDiv.textContent = data.hata;
+                hataDiv.classList.remove('d-none');
+                return;
+            }
+
+            document.getElementById('guncelleme').textContent = sonGuncellemeLabel + ': ' + data.guncelleme;
+
+            const ctx = document.getElementById('dovizGrafik').getContext('2d');
+
+            if (grafik) {
+                grafik.data.labels = data.labels;
+                grafik.data.datasets[0].data = data.values;
+                grafik.update();
+            } else {
+                grafik = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.labels,
+                        datasets: [{
+                            label: '1 USD',
+                            data: data.values,
+                            backgroundColor: [
+                                '#e63946', '#457b9d', '#2a9d8f',
+                                '#e9c46a', '#f4a261', '#264653',
+                                '#a8dadc'
+                            ],
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: ctx => ctx.parsed.y.toFixed(4)
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                type: 'logarithmic',
+                                ticks: {
+                                    callback: val => val.toFixed(2)
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        } catch (e) {
+            hataDiv.textContent = 'Bağlantı hatası: ' + e.message;
+            hataDiv.classList.remove('d-none');
+        } finally {
+            btn.disabled = false;
+            btn.textContent = yenile;
+        }
+    }
+
+    veriYukle();
+</script>

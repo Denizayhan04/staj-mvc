@@ -1,0 +1,30 @@
+@model staj_mvc.Models.Ayarlar
+
+@{
+    ViewData["Title"] = L["Ayarlar"];
+}
+
+<h2>@L["Ayarlar"]</h2>
+
+<table class="table">
+    <tr>
+        <th>@L["IstasyonKodu"]</th>
+        <td>@Model.IstasyonKodu</td>
+    </tr>
+    <tr>
+        <th>@L["PortAdi"]</th>
+        <td>@Model.PortAdi</td>
+    </tr>
+    <tr>
+        <th>@L["SaatDilimi"]</th>
+        <td>@Model.SaatDilimi</td>
+    </tr>
+    <tr>
+        <th>@L["SonPatch"]</th>
+        <td>@Model.SonPatch</td>
+    </tr>
+    <tr>
+        <th>@L["DefaultEmail"]</th>
+        <td>@Model.DefaultEmail</td>
+    </tr>
+</table>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Ayarlar" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="IstasyonKodu" xml:space="preserve">
+    <value>Station Code</value>
+  </data>
+  <data name="PortAdi" xml:space="preserve">
+    <value>Port Name</value>
+  </data>
+  <data name="SaatDilimi" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="SonPatch" xml:space="preserve">
+    <value>Last Patch</value>
+  </data>
+  <data name="DefaultEmail" xml:space="preserve">
+    <value>Default Email</value>
+  </data>
+  <data name="Kaydet" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="GeriDon" xml:space="preserve">
+    <value>Go Back</value>
+  </data>
+  <data name="Sil" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Duzenle" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Guncelle" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="YeniKayitEkle" xml:space="preserve">
+    <value>Add New Record</value>
+  </data>
+  <data name="KayitListesi" xml:space="preserve">
+    <value>Record List</value>
+  </data>
+  <data name="YeniKayit" xml:space="preserve">
+    <value>New Record</value>
+  </data>
+  <data name="KayitDuzenle" xml:space="preserve">
+    <value>Edit Record</value>
+  </data>
+  <data name="Tarih" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Deger" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="Aciklama" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Islem" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="SilOnay" xml:space="preserve">
+    <value>Are you sure you want to delete?</value>
+  </data>
+  <data name="DovizKurlari" xml:space="preserve">
+    <value>Exchange Rates</value>
+  </data>
+  <data name="DovizBaslik" xml:space="preserve">
+    <value>Exchange Rates (1 USD)</value>
+  </data>
+  <data name="ParaBirimi" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="KurUSD" xml:space="preserve">
+    <value>Rate (USD based)</value>
+  </data>
+  <data name="SonGuncelleme" xml:space="preserve">
+    <value>Last updated</value>
+  </data>
+  <data name="CanlıGrafik" xml:space="preserve">
+    <value>Live Chart</value>
+  </data>
+  <data name="GrafikBaslik" xml:space="preserve">
+    <value>Exchange Rates (USD based)</value>
+  </data>
+  <data name="Yenile" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Yukleniyor" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="HamVeriParse" xml:space="preserve">
+    <value>Raw Data Parse</value>
+  </data>
+  <data name="HamVeriParseBaslik" xml:space="preserve">
+    <value>Raw Data Parse Screen</value>
+  </data>
+  <data name="HamVeri" xml:space="preserve">
+    <value>Raw Data</value>
+  </data>
+  <data name="ParseEt" xml:space="preserve">
+    <value>Parse</value>
+  </data>
+  <data name="DosyaYukle" xml:space="preserve">
+    <value>Upload File</value>
+  </data>
+  <data name="DosyaYukleBaslik" xml:space="preserve">
+    <value>Upload File and Parse</value>
+  </data>
+  <data name="SensorDosyasi" xml:space="preserve">
+    <value>Sensor Data File (.txt)</value>
+  </data>
+  <data name="YukleParsEt" xml:space="preserve">
+    <value>Upload and Parse</value>
+  </data>
+  <data name="LogDosyasiniGor" xml:space="preserve">
+    <value>View Log File</value>
+  </data>
+  <data name="YuklenenDosya" xml:space="preserve">
+    <value>Uploaded file</value>
+  </data>
+  <data name="KontrolPaneli" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="AyarlarAciklama" xml:space="preserve">
+    <value>View application configuration settings.</value>
+  </data>
+  <data name="KayitListesiAciklama" xml:space="preserve">
+    <value>List, add, edit and delete records.</value>
+  </data>
+  <data name="HamVeriAciklama" xml:space="preserve">
+    <value>Paste sensor data and parse it.</value>
+  </data>
+  <data name="DosyaYukleAciklama" xml:space="preserve">
+    <value>Upload txt file, parse it and view logs.</value>
+  </data>
+  <data name="CanlıGrafikAciklama" xml:space="preserve">
+    <value>View exchange rates on a chart.</value>
+  </data>
+  <data name="DovizAciklama" xml:space="preserve">
+    <value>View current exchange rates as a table.</value>
+  </data>
+  <data name="Git" xml:space="preserve">
+    <value>Go</value>
+  </data>
+</root>

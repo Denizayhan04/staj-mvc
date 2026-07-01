@@ -1,0 +1,36 @@
+@model staj_mvc.Models.Kayit
+
+@{
+    ViewData["Title"] = L["KayitDuzenle"];
+}
+
+<h2>@L["KayitDuzenle"]</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Tarih" class="form-label">@L["Tarih"]</label>
+        <input asp-for="Tarih" class="form-control" type="datetime-local" />
+        <span asp-validation-for="Tarih" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Deger" class="form-label">@L["Deger"]</label>
+        <input asp-for="Deger" class="form-control" />
+        <span asp-validation-for="Deger" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Aciklama" class="form-label">@L["Aciklama"]</label>
+        <textarea asp-for="Aciklama" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Aciklama" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">@L["Guncelle"]</button>
+    <a asp-action="Index" class="btn btn-secondary">@L["GeriDon"]</a>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

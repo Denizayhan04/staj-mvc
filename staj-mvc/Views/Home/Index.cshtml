@@ -1,0 +1,67 @@
+@{
+    ViewData["Title"] = L["KontrolPaneli"];
+}
+
+<h2 class="mb-4">@L["KontrolPaneli"]</h2>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">⚙️ @L["Ayarlar"]</h5>
+                <p class="card-text text-muted">@L["AyarlarAciklama"]</p>
+                <a asp-controller="Ayarlar" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">📋 @L["KayitListesi"]</h5>
+                <p class="card-text text-muted">@L["KayitListesiAciklama"]</p>
+                <a asp-controller="Kayit" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">📡 @L["HamVeriParse"]</h5>
+                <p class="card-text text-muted">@L["HamVeriAciklama"]</p>
+                <a asp-controller="Parse" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">📂 @L["DosyaYukle"]</h5>
+                <p class="card-text text-muted">@L["DosyaYukleAciklama"]</p>
+                <a asp-controller="Dosya" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">📈 @L["CanlıGrafik"]</h5>
+                <p class="card-text text-muted">@L["CanlıGrafikAciklama"]</p>
+                <a asp-controller="Grafik" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">💱 @L["DovizKurlari"]</h5>
+                <p class="card-text text-muted">@L["DovizAciklama"]</p>
+                <a asp-controller="Doviz" asp-action="Index" class="btn btn-outline-primary">@L["Git"]</a>
+            </div>
+        </div>
+    </div>
+</div>

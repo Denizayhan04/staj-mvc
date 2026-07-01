@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Log Dosyası";
+}
+
+<h2>Log Dosyası</h2>
+
+<div class="mb-3 d-flex gap-2">
+    <a asp-action="LogGoster" class="btn btn-outline-secondary btn-sm">Tümü</a>
+    <a asp-action="LogGoster" asp-route-filtre="ERROR" class="btn btn-outline-danger btn-sm">Sadece Hatalar</a>
+    <a asp-action="LogGoster" asp-route-filtre="OK" class="btn btn-outline-success btn-sm">Sadece Başarılılar</a>
+    <a asp-action="LogGoster" asp-route-filtre="INFO" class="btn btn-outline-info btn-sm">Sadece Info</a>
+    <a asp-action="Index" class="btn btn-secondary btn-sm ms-auto">Geri Dön</a>
+</div>
+
+<p class="text-muted">
+    Filtre: <strong>@ViewBag.Filtre</strong>
+</p>
+
+<pre class="bg-dark text-light p-3 rounded" style="max-height: 600px; overflow-y: auto;">@ViewBag.LogIcerik</pre>

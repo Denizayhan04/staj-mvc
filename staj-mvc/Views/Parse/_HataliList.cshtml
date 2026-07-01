@@ -1,0 +1,21 @@
+@model List<staj_mvc.Models.HataliSatir>
+
+    <h4 class="text-danger">Hatalı Satırlar (@Model.Count)</h4>
+
+    @if (!Model.Any())
+{
+    <p class="text-muted">Hatalı satır yok.</p>
+}
+else
+{
+    <ul class="list-group">
+        @foreach (var hata in Model)
+    {
+        <li class="list-group-item list-group-item-danger">
+            <strong>Satır @hata.SatirNo:</strong> @hata.Icerik
+            <br />
+            <small>⚠ @hata.HataMesaji</small>
+            </li>
+    }
+    </ul>
+}

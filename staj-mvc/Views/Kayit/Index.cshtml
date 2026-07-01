@@ -1,0 +1,40 @@
+@model List<staj_mvc.Models.Kayit>
+
+@{
+    ViewData["Title"] = L["KayitListesi"];
+}
+
+<h2>@L["KayitListesi"]</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">@L["YeniKayitEkle"]</a>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>@L["Tarih"]</th>
+        <th>@L["Deger"]</th>
+        <th>@L["Aciklama"]</th>
+        <th>@L["Islem"]</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var kayit in Model)
+    {
+        <tr>
+            <td>@kayit.Id</td>
+            <td>@kayit.Tarih.ToString("dd.MM.yyyy HH:mm")</td>
+            <td>@kayit.Deger</td>
+            <td>@kayit.Aciklama</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@kayit.Id" class="btn btn-warning btn-sm">@L["Duzenle"]</a>
+                <form asp-action="Delete" asp-route-id="@kayit.Id" method="post" style="display:inline">
+                    <button type="submit" class="btn btn-danger btn-sm"
+                            onclick="return confirm('@L["SilOnay"]')">
+                        @L["Sil"]
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
