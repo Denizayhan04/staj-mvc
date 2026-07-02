@@ -13,7 +13,7 @@ public class Kayit
     public DateTime Tarih { get; set; }
     
     [Required]
-    [Range(0,100000)]
+    [Range(0,100000,ErrorMessage="0 ile 100000 bir sayı girin ")]
     public int Deger { get; set; }
     
     

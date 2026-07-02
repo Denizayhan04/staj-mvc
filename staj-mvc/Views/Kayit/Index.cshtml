@@ -18,21 +18,33 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var kayit in Model)
+    @if (Model != null && Model.Any())
+    {
+        @foreach (var kayit in Model)
+        {
+            <tr>
+                <td>@kayit.Id</td>
+                <td>@kayit.Tarih.ToString("dd.MM.yyyy HH:mm")</td>
+                <td>@kayit.Deger</td>
+                <td>@kayit.Aciklama</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@kayit.Id" class="btn btn-warning btn-sm">@L["Duzenle"]</a>
+                    <form asp-action="Delete" asp-route-id="@kayit.Id" method="post" style="display:inline">
+                        <button type="submit" class="btn btn-danger btn-sm"
+                                onclick="return confirm('@L["SilOnay"]')">
+                            @L["Sil"]
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    }
+    else
     {
         <tr>
-            <td>@kayit.Id</td>
-            <td>@kayit.Tarih.ToString("dd.MM.yyyy HH:mm")</td>
-            <td>@kayit.Deger</td>
-            <td>@kayit.Aciklama</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@kayit.Id" class="btn btn-warning btn-sm">@L["Duzenle"]</a>
-                <form asp-action="Delete" asp-route-id="@kayit.Id" method="post" style="display:inline">
-                    <button type="submit" class="btn btn-danger btn-sm"
-                            onclick="return confirm('@L["SilOnay"]')">
-                        @L["Sil"]
-                    </button>
-                </form>
+            <!-- Toplam 5 sütun olduğu için colspan="5" vererek satırı birleştirdik -->
+            <td colspan="5" class="text-center text-muted m-3 p-4">
+                <i class="bi bi-info-circle me-2"></i> @L["Herhangi bir kayıt bulunamadı."]
             </td>
         </tr>
     }
