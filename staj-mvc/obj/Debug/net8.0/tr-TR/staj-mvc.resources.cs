@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("staj-mvc")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f01208866dc1c81624cd3071d7594d347c5547a7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67eaa0cd2a5718ac08eaa312d8fa203e83103edc")]
 [assembly: System.Reflection.AssemblyProductAttribute("staj-mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("staj-mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

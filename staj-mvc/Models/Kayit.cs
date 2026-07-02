@@ -1,9 +1,22 @@
+
+using System.ComponentModel.DataAnnotations;
+
 namespace staj_mvc.Models;
 
 public class Kayit
 {
-    public int Id { get; set; }
+    [Key]
+    public int Id { get; set; } //primary
+    
+    [Required]
+    [DataType(DataType.Date)]
     public DateTime Tarih { get; set; }
+    
+    [Required]
+    [Range(0,100000)]
     public int Deger { get; set; }
+    
+    
+    [StringLength(500, ErrorMessage = "Açıklama en fazla 500 karakter olabilir.")]
     public string? Aciklama { get; set; }
 }

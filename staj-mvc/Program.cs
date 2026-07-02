@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Localization;
+using Microsoft.EntityFrameworkCore;
+using staj_mvc.Data;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +11,11 @@ builder.Services.AddControllersWithViews()
     .AddDataAnnotationsLocalization();
 
 builder.Services.AddHttpClient();
+
+// Veritabanı bağlantısı (MySQL / Pomelo)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<StajDbContext>(opts =>
+    opts.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // Kaynak dosyalarının aranacağı kök klasör belirtiliyor
 builder.Services.AddLocalization(opts => opts.ResourcesPath = "Resources");
@@ -31,6 +38,13 @@ builder.Services.Configure<RequestLocalizationOptions>(opts =>
 });
 
 var app = builder.Build();
+
+// Veritabanı ve tablolar yoksa modellere göre otomatik oluşturulur
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<StajDbContext>();
+    db.Database.EnsureCreated();
+}
 
 if (!app.Environment.IsDevelopment())
 {
